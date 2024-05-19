@@ -1,70 +1,31 @@
-# Getting Started with Create React App
+# Welcome to the Kubicle Take Home Assignment - React Frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Introduction
 
-## Available Scripts
+Thank you for taking the time to attempt the Kubicle take home assignment. To help you get up and running quickly we have provided a basic frontend application which you can expand as part of the assignment. 
 
-In the project directory, you can run:
+This is the **React** version of frontend.
 
-### `npm start`
+## Running
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Make sure you have NodeJs installed. If you don't we recommend using [Node Version Manager](https://github.com/nvm-sh/nvm) to install and manage your NodeJs installs.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Once you have NodeJs installed and you have cloned this repo, run 
 
-### `npm test`
+```
+npm install
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+in the repo directory to install all relevant Node modules. Once this has been completed you can start the React development server by running
 
-### `npm run build`
+```
+PORT=3001 npm start
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Run your frontend development server off port `3001` as port `3000` will be taken by your backend server.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Once you have this running you should be able to go to `http://localhost:3001` to see the example Kubicle app. If your backend server is not running you won't will probably get errors though as it won't find the expected data. You can start your choosen backend server to get the application working end to end.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Components and Styling
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+The Kubicle React Frontend uses [Material UI](https://mui.com) as an off the shelf component library. This allows for rapid development. It also uses an off the shelf open source video player [VideoJS](https://videojs.com/)
