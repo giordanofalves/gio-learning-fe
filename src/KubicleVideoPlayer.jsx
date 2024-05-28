@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import VideoJS from "./VideoJS";
 
-export default function VideoCard({videoUrl, startTime, onPlayerPause}) {
+export default function VideoCard({videoUrl, startTime, onPlayerPause, onPlayerPlay, onPlayerEnded}) {
   const playerRef = useRef(null);
 
   const videoJsOptions = {
@@ -26,19 +26,29 @@ export default function VideoCard({videoUrl, startTime, onPlayerPause}) {
       console.log('VideoJS: player is waiting');
     });
 
+     player.on('play', (event) => {
+      console.log('VideoJS: player is playing');
+      onPlayerPlay(player);
+    });
+
     player.on('pause', (event) => {
       console.log('VideoJS: player is paused');
       onPlayerPause(player);
     });
 
+    player.on('ended', () => {
+      console.log('VideoJS: player has ended');
+      onPlayerEnded(player);
+    });
+
     player.on('dispose', () => {
       console.log('VideoJS: player will dispose');
     });
+
+
   };
 
   return (
     <VideoJS options={videoJsOptions} onReady={handlePlayerReady} />
   );
 }
-
-
